@@ -19,9 +19,9 @@ class Usuario {
   countMascotas() {
     return this.mascotas.length;
   }
-  //  Agregar un método addBook que reciba un nombre, un autor y un booleano con si se ha leído o no. Debe agregar un objeto: {nombre, autor, leido} al arreglo de libros del usuario.
-  addBook(nombre, autor, leido) {
-    this.libros.push({ nombre, autor, leido });
+  //  Agregar un método addBook que reciba un nombre, un autor  Debe agregar un objeto: {nombre, autor} al arreglo de libros del usuario.
+  addBook(nombre, autor) {
+    this.libros.push({ nombre, autor });
   }
   //  Agregar un método getBookNames que retorne un arreglo con sólo los nombres del arreglo de libros del usuario.
   getBookNames() {
@@ -47,3 +47,19 @@ usuario.addMascota("Pájaro");
 console.log(usuario.countMascotas());
 usuario.addBook({ nombre: "El señor de los anillos", autor: "J.R.R. Tolkien" });
 console.log(usuario.getBookNames());
+function hacerTarea(num, cb) {
+  console.log('haciendo tarea ' + num)
+  setTimeout(cb,100)
+}
+
+console.log('inicio de tareas');
+hacerTarea(1, () => {
+  hacerTarea(2, () => {
+      hacerTarea(3, () => {
+          hacerTarea(4, () => {
+              console.log('fin de tareas')
+          })
+      })
+  })
+})
+console.log('otras tareas ...')
