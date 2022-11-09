@@ -21,17 +21,6 @@ app.get("/productoRandom", async (req, res) => {
   res.json(randomProduct);
 });
 
-app.get("/albums", (req, res) => {
-  res.send("Hi, you are at Albums");
-});
-
-app.get("/object", (req, res) => {
-  res.json({
-    title: "Are you experienced?",
-    artist: "The Jimi Hendrix Experience",
-  });
-});
-
 const generateRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max + 1 - min) + min);
 };
