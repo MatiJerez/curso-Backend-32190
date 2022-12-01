@@ -1,0 +1,38 @@
+[
+  {
+    "email": "user1@gmail.com",
+    "message": "Hello World",
+    "date": "2019-01-01 12:00:00",
+    "id": 1
+  },
+  {
+    "email": "user2@gmail.com",
+    "message": "hi!",
+    "date": "2019-01-01 12:01:00",
+    "id": 2
+  },
+  {
+    "email": "user1@gmail.com",
+    "message": "what's up?",
+    "date": "2019-01-01 12:02:00",
+    "id": 3
+  },
+  {
+    "email": "user2@gmail.com",
+    "message": "nothing much",
+    "date": "2019-01-01 12:03:00",
+    "id": 4
+  },
+  {
+    "email": "user2@gmail.com",
+    "message": "how about you?",
+    "date": "2019-01-01 12:04:00",
+    "id": 5
+  },
+  {
+    "email": "user1@gmail.com",
+    "message": "same",
+    "date": "2019-01-01 12:05:00",
+    "id": 6
+  }
+]
